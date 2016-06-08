@@ -1,0 +1,9 @@
+applications:
+- name: cf-haash-client
+  path: pre-built/haash-client-0.0.1-SNAPSHOT.jar
+  memory: 512M
+  random-route: true
+  buildpack: https://github.com/filippo22000/java-buildpack.git
+  services:
+  - myhash
+  - my-logs
